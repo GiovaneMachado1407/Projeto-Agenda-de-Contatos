@@ -1,0 +1,790 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/material/icons.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/agenda_de_contatos/provider/list_of_contacts.dart', 'packages/agenda_de_contatos/style.dart', 'packages/flutter/src/material/page.dart', 'packages/agenda_de_contatos/details/details.dart', 'packages/flutter/src/painting/box_fit.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/strut_style.dart'], (function load__packages__agenda_de_contatos__screens__home__home_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__material__icons$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__agenda_de_contatos__provider__list_of_contacts$46dart, packages__agenda_de_contatos__style$46dart, packages__flutter__src__material__page$46dart, packages__agenda_de_contatos__details__details$46dart, packages__flutter__src__painting__box_fit$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__strut_style$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const heroes = packages__flutter__src__widgets__widget_span$46dart.src__widgets__heroes;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const floating_action_button = packages__flutter__src__material__icon_button$46dart.src__material__floating_action_button;
+  const divider = packages__flutter__src__material__icon_button$46dart.src__material__divider;
+  const list_tile = packages__flutter__src__material__icon_button$46dart.src__material__list_tile;
+  const icon_button = packages__flutter__src__material__icon_button$46dart.src__material__icon_button;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icons = packages__flutter__src__material__icons$46dart.src__material__icons;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const list_of_contacts = packages__agenda_de_contatos__provider__list_of_contacts$46dart.provider__list_of_contacts;
+  const style = packages__agenda_de_contatos__style$46dart.style;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const details = packages__agenda_de_contatos__details__details$46dart.details__details;
+  const box_fit = packages__flutter__src__painting__box_fit$46dart.src__painting__box_fit;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  var home = Object.create(dart.library);
+  var $length = dartx.length;
+  var $elementAt = dartx.elementAt;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    BuildContextAndintToDivider: () => (T.BuildContextAndintToDivider = dart.constFn(dart.fnType(divider.Divider, [framework.BuildContext, core.int])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    BuildContextToDetails: () => (T.BuildContextToDetails = dart.constFn(dart.fnType(details.Details, [framework.BuildContext])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 21,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 9,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 15,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 27,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 20,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 9,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 9,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 9,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "separatorBuilder",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17, C[18] || CT.C18, C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "floatingActionButton",
+        [_Location_column]: 7,
+        [_Location_line]: 18,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22, C[23] || CT.C23, C[24] || CT.C24], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 23,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27, C[28] || CT.C28], widget_inspector._Location);
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 23,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 17,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31, C[32] || CT.C32], widget_inspector._Location);
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 9,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 9,
+        [_Location_line]: 45,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.constList([C[35] || CT.C35, C[36] || CT.C36], widget_inspector._Location);
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[34] || CT.C34,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 17,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 11,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40], widget_inspector._Location);
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "_selectedContact",
+        [_Location_column]: 28,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.constList([C[43] || CT.C43], widget_inspector._Location);
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[42] || CT.C42,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 55,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 9,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 9,
+        [_Location_line]: 52,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46, C[47] || CT.C47], widget_inspector._Location);
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "name",
+        [_Location_column]: 26,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 17,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 17,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "fit",
+        [_Location_column]: 17,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50, C[51] || CT.C51, C[52] || CT.C52, C[53] || CT.C53], widget_inspector._Location);
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.constList([C[56] || CT.C56], widget_inspector._Location);
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[55] || CT.C55,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 63,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "tag",
+        [_Location_column]: 13,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.constList([C[59] || CT.C59, C[60] || CT.C60], widget_inspector._Location);
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[58] || CT.C58,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.constList([C[63] || CT.C63], widget_inspector._Location);
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[62] || CT.C62,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 26,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C65() {
+      return C[65] = dart.constList([C[66] || CT.C66, C[67] || CT.C67], widget_inspector._Location);
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[65] || CT.C65,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 78,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 26,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 17,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70, C[71] || CT.C71], widget_inspector._Location);
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 13,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.constList([C[74] || CT.C74, C[75] || CT.C75], widget_inspector._Location);
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[73] || CT.C73,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.constList([C[78] || CT.C78], widget_inspector._Location);
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[77] || CT.C77,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "leading",
+        [_Location_column]: 7,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "trailing",
+        [_Location_column]: 7,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 7,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C80() {
+      return C[80] = dart.constList([C[81] || CT.C81, C[82] || CT.C82, C[83] || CT.C83], widget_inspector._Location);
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[80] || CT.C80,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/ppatr/OneDrive/Documentos/mobilieII/projeto%20google%20agenda/agenda_de_contatos/lib/screens/home/home.dart"
+      });
+    }
+  }, false);
+  var C = Array(84).fill(void 0);
+  var I = ["package:agenda_de_contatos/screens/home/home.dart"];
+  home.Home = class Home extends framework.StatefulWidget {
+    createState() {
+      return new home._HomeState.new();
+    }
+  };
+  (home.Home.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    home.Home.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = home.Home.prototype;
+  dart.addTypeTests(home.Home);
+  dart.addTypeCaches(home.Home);
+  dart.setMethodSignature(home.Home, () => ({
+    __proto__: dart.getMethods(home.Home.__proto__),
+    createState: dart.fnType(framework.State$(framework.StatefulWidget), [])
+  }));
+  dart.setLibraryUri(home.Home, I[0]);
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  home._HomeState = class _HomeState extends framework.State$(home.Home) {
+    build(context) {
+      return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new("Meus contatos", {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), floatingActionButton: new floating_action_button.FloatingActionButton.new({onPressed: null, child: new icon.Icon.new(icons.Icons.add, {$creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), body: new scroll_view.ListView.separated({itemBuilder: dart.bind(this, 'builder'), itemCount: list_of_contacts.listofContacts[$length], separatorBuilder: dart.fn((_, index) => new divider.Divider.new({$creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), T.BuildContextAndintToDivider()), $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), $creationLocationd_0dea112b090073317d4: C[20] || CT.C20});
+    }
+    builder(_, index) {
+      let _contact = list_of_contacts.listofContacts[$elementAt](index);
+      return new list_tile.ListTile.new({leading: new icon_button.IconButton.new({icon: _contact.isFavorite ? new icon.Icon.new(icons.Icons.star, {color: style.blueTheme, $creationLocationd_0dea112b090073317d4: C[25] || CT.C25}) : new icon.Icon.new(icons.Icons.star_outline, {color: style.blueTheme, $creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), onPressed: dart.fn(() => {
+          }, T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[33] || CT.C33}), trailing: new icon_button.IconButton.new({icon: new icon.Icon.new(icons.Icons.chevron_right, {color: style.grayTheme, $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), onPressed: dart.fn(() => {
+            navigator.Navigator.of(this.context).push(dart.dynamic, new page.MaterialPageRoute.new({builder: dart.fn(_ => new details.Details.new(_contact, {$creationLocationd_0dea112b090073317d4: C[41] || CT.C41}), T.BuildContextToDetails())}));
+          }, T.VoidTovoid()), $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), title: new basic.Row.new({children: T.JSArrayOfWidget().of([new heroes.Hero.new({tag: _contact.name, child: new basic.ClipOval.new({child: new image.Image.asset(_contact.photo, {width: 40.0, height: 40.0, fit: box_fit.BoxFit.cover, $creationLocationd_0dea112b090073317d4: C[48] || CT.C48}), $creationLocationd_0dea112b090073317d4: C[54] || CT.C54}), $creationLocationd_0dea112b090073317d4: C[57] || CT.C57}), new basic.SizedBox.new({width: 12.0, $creationLocationd_0dea112b090073317d4: C[61] || CT.C61}), new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidget().of([new text.Text.new(_contact.name, {style: new text_style.TextStyle.new({fontSize: 14.0, fontWeight: ui.FontWeight.bold, color: style.grayTheme}), $creationLocationd_0dea112b090073317d4: C[64] || CT.C64}), new text.Text.new(_contact.phone, {style: new text_style.TextStyle.new({fontSize: 14.0, color: style.grayTheme}), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68})]), $creationLocationd_0dea112b090073317d4: C[72] || CT.C72})]), $creationLocationd_0dea112b090073317d4: C[76] || CT.C76}), $creationLocationd_0dea112b090073317d4: C[79] || CT.C79});
+    }
+  };
+  (home._HomeState.new = function() {
+    home._HomeState.__proto__.new.call(this);
+    ;
+  }).prototype = home._HomeState.prototype;
+  dart.addTypeTests(home._HomeState);
+  dart.addTypeCaches(home._HomeState);
+  dart.setMethodSignature(home._HomeState, () => ({
+    __proto__: dart.getMethods(home._HomeState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext]),
+    builder: dart.fnType(framework.Widget, [framework.BuildContext, core.int])
+  }));
+  dart.setLibraryUri(home._HomeState, I[0]);
+  dart.trackLibraries("packages/agenda_de_contatos/screens/home/home.dart", {
+    "package:agenda_de_contatos/screens/home/home.dart": home
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["home.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQmB;IAAY;;;;;;EAC/B;;;;;;;;;;;;;;UAG4B;AACxB,YAAO,oCACG,+BACC,kBAAK,0JAEQ,gEACT,aACJ,kBAAW,0IAEL,2DACA,6BACF,AAAe,4DACR,SAAC,GAAG,UACb;IAIf;YAE4B,GAAO;AACzB,qBAAW,AAAe,4CAAU,KAAK;AACjD,YAAO,sCACI,sCACA,AAAS,QAAD,cACT,kBACQ,0BACC,6EAET,kBACQ,kCACC,uFAEJ;mGAEH,sCACF,kBACE,mCACC,uFAEE;AAIN,YAHO,AACL,uBADQ,iCACH,yCAA2B,QAAc,KAC1C,wBAAQ,QAAQ;gGAItB,6BACK,wBACR,0BACO,AAAS,QAAD,cACN,+BACQ,sBACX,AAAS,QAAD,gBACD,cACC,WACI,uMAIlB,+BACS,iEAET,0CACyC,yCAC7B,wBACR,kBACE,AAAS,QAAD,eACD,wCACK,kBACa,2BAChB,8EAGX,kBACE,AAAS,QAAD,gBACD,wCACK,aACH;IAQvB;;;;;EACF","file":"../../../../../../../../../../packages/agenda_de_contatos/screens/home/home.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__home__home: home
+  };
+}));
+
+//# sourceMappingURL=home.dart.lib.js.map
